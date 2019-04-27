@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/style_main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:background="@drawable/ss_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".GalleryActivity">
 
     <TextView
         android:id="@+id/welcome_tv"
         android:layout_width="match_parent"
         android:layout_height="667dp"
         android:fontFamily="cursive"
-        android:text="\nWelcome To Southern Style"
+        android:text="\nHair Gallery"
         android:textAlignment="center"
         android:textSize="28dp"
         android:textStyle="bold" />
@@ -24,30 +26,33 @@
         android:weightSum="3">
 
         <Button
+            android:id="@+id/homeButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/servicesButton"
+            android:layout_weight=".33"
+            android:text="Home"
+            tools:text="Home" />
+
+        <Button
             android:id="@+id/servicesButton"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_toLeftOf="@+id/galleryButton"
             android:layout_weight=".33"
             android:text="Services" />
-
-        <Button
-            android:id="@+id/galleryButton"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_weight=".33"
-            android:text="Gallery" />
 
         <Button
             android:id="@+id/contactButton"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_toRightOf="@+id/galleryButton"
+            android:layout_toRightOf="@+id/servicesButton"
             android:layout_weight=".33"
             android:text="Contact" />
-    </RelativeLayout>
 
+
+    </RelativeLayout>
 </LinearLayout>
+
