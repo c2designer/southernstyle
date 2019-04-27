@@ -9,14 +9,15 @@
     tools:context=".ServicesActivity">
 
     <TextView
-        android:id="@+id/welcome_tv"
+        android:id="@+id/services_tv"
         android:layout_width="match_parent"
-        android:layout_height="667dp"
+        android:layout_height="683dp"
         android:fontFamily="cursive"
         android:text="\nMenu of Services"
         android:textAlignment="center"
         android:textSize="28dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="\nMenu of Services" />
 
     <RelativeLayout
         android:layout_width="match_parent"

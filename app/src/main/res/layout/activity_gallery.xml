@@ -9,7 +9,7 @@
     tools:context=".GalleryActivity">
 
     <TextView
-        android:id="@+id/welcome_tv"
+        android:id="@+id/gallery_tv"
         android:layout_width="match_parent"
         android:layout_height="667dp"
         android:fontFamily="cursive"
