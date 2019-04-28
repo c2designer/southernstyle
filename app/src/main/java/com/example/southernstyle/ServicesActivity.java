@@ -2,24 +2,21 @@ package com.example.southernstyle;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
-
+public class ServicesActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_services);
 
-
-        Button a = findViewById(R.id.servicesButton);
+        Button a = findViewById(R.id.homeButton);
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewServices();
+                goHome();
             }
         });
 
@@ -40,9 +37,9 @@ public class MainActivity extends Activity {
         });
     }
 
-    private void viewServices() {
+    private void goHome() {
         Intent intent = new Intent(getApplicationContext(),
-                ServicesActivity.class);
+                MainActivity.class);
         startActivity(intent);
     }
 
@@ -57,4 +54,5 @@ public class MainActivity extends Activity {
                 ContactActivity.class);
         startActivity(intent);
     }
+
 }

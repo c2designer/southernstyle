@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/style_main"
+    android:background="@drawable/ss_background"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/welcome_tv"
+        android:id="@+id/contact_tv"
         android:layout_width="match_parent"
-        android:layout_height="398dp"
+        android:layout_height="667dp"
         android:fontFamily="cursive"
-        android:text="\nWelcome To Southern Style"
+        android:text="\nContact Us"
         android:textAlignment="center"
         android:textSize="28dp"
         android:textStyle="bold" />
 
-
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="62dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:orientation="vertical"
         android:weightSum="3">
@@ -30,7 +28,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_toLeftOf="@+id/galleryButton"
+            android:layout_toRightOf="@+id/galleryButton"
             android:layout_weight=".33"
             android:text="Services" />
 
@@ -43,34 +41,14 @@
             android:text="Gallery" />
 
         <Button
-            android:id="@+id/contactButton"
+            android:id="@+id/homeButton"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_toRightOf="@+id/galleryButton"
+            android:layout_toLeftOf="@+id/galleryButton"
             android:layout_weight=".33"
-            android:text="Contact" />
-
+            android:text="Home"
+            tools:text="Home" />
     </RelativeLayout>
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="225dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="0dp"
-            app:srcCompat="@drawable/ss_gallery1" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:layout_weight="1"
-        android:fontFamily="cursive"
-        android:textAlignment="center"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:text="From Mild to Wild, Find Your Perfect Southern Style." />
-
-
 
 </LinearLayout>

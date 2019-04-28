@@ -2,18 +2,15 @@ package com.example.southernstyle;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
-
+public class GalleryActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_gallery);
 
         Button a = findViewById(R.id.servicesButton);
         a.setOnClickListener(new View.OnClickListener() {
@@ -23,11 +20,11 @@ public class MainActivity extends Activity {
             }
         });
 
-        Button b = findViewById(R.id.galleryButton);
+        Button b = findViewById(R.id.homeButton);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewGallery();
+                goHome();
             }
         });
 
@@ -46,9 +43,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
-    private void viewGallery() {
+    private void goHome() {
         Intent intent = new Intent(getApplicationContext(),
-                GalleryActivity.class);
+                MainActivity.class);
         startActivity(intent);
     }
 
@@ -57,4 +54,5 @@ public class MainActivity extends Activity {
                 ContactActivity.class);
         startActivity(intent);
     }
+
 }

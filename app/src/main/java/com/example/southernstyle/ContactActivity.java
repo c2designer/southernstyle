@@ -2,17 +2,15 @@ package com.example.southernstyle;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
-
+public class ContactActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_contact);
 
 
         Button a = findViewById(R.id.servicesButton);
@@ -23,19 +21,19 @@ public class MainActivity extends Activity {
             }
         });
 
-        Button b = findViewById(R.id.galleryButton);
+        Button b = findViewById(R.id.homeButton);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewGallery();
+                goHome();
             }
         });
 
-        Button c = findViewById(R.id.contactButton);
+        Button c = findViewById(R.id.galleryButton);
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewContact();
+                viewGallery();
             }
         });
     }
@@ -46,15 +44,16 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    private void goHome() {
+        Intent intent = new Intent(getApplicationContext(),
+                MainActivity.class);
+        startActivity(intent);
+    }
+
     private void viewGallery() {
         Intent intent = new Intent(getApplicationContext(),
                 GalleryActivity.class);
         startActivity(intent);
     }
 
-    private void viewContact() {
-        Intent intent = new Intent(getApplicationContext(),
-                ContactActivity.class);
-        startActivity(intent);
-    }
 }
