@@ -58,7 +58,7 @@ public class CreateAppointment extends Activity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
+                //nothing to see here.
             }
         });
 
