@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/ss_background"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
+    <!--header TextView -->
     <TextView
         android:id="@+id/contact_tv"
         android:layout_width="match_parent"
-        android:layout_height="667dp"
+        android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:text="\nContact Us"
         android:textAlignment="center"
         android:textSize="28dp"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:src="@drawable/static_map" />
+    <!--contact details TextView -->
+    <TextView
+        android:id="@+id/contactTV"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_margin="12dp"
+        android:background="#F5F5F5"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:visibility="visible" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,13 +41,14 @@
         android:orientation="vertical"
         android:weightSum="3">
 
+
         <Button
             android:id="@+id/servicesButton"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@+id/galleryButton"
-            android:layout_weight=".33"
+            android:layout_weight="1"
             android:text="Services" />
 
         <Button
@@ -37,7 +56,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_weight=".33"
+            android:layout_weight="1"
             android:text="Gallery" />
 
         <Button
@@ -46,9 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_toLeftOf="@+id/galleryButton"
-            android:layout_weight=".33"
-            android:text="Home"
-            tools:text="Home" />
+            android:layout_weight="1"
+            android:text="Home" />
     </RelativeLayout>
 
 </LinearLayout>

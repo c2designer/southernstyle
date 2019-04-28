@@ -52,23 +52,25 @@
             android:text="Contact" />
 
     </RelativeLayout>
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="225dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="0dp"
-            android:src="@drawable/ss_gallery1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_weight="1"
+        android:src="@drawable/ss_gallery1" />
 
     <TextView
         android:id="@+id/footerTV"
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_weight="1"
+        android:layout_gravity="bottom"
         android:fontFamily="cursive"
         android:textAlignment="center"
         android:textSize="18dp"
         android:textStyle="bold"
+        android:textColor="#FFFFFF"
         android:text="From Mild to Wild, Find Your Perfect Southern Style." />
 
 

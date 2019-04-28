@@ -5,13 +5,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ContactActivity extends Activity {
+
+    private TextView contactTV;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
+        contactTV = findViewById(R.id.contactTV);
+        contactTV.setTextSize(24);
+        contactTV.setText("Conveniently located between I-40 and Fairfield Glade\nat 2672 Peavine Rd, Crossville, TN, 38571\n931-261-3058");
 
         Button a = findViewById(R.id.servicesButton);
         a.setOnClickListener(new View.OnClickListener() {
