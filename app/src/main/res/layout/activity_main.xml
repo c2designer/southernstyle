@@ -20,43 +20,50 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="62dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:orientation="vertical"
-        android:weightSum="3">
+        android:weightSum="4">
 
         <Button
             android:id="@+id/servicesButton"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_toLeftOf="@+id/galleryButton"
-            android:layout_weight=".33"
+            android:layout_alignParentStart="false"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/contactButton"
             android:text="Services" />
 
         <Button
             android:id="@+id/galleryButton"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_weight=".33"
+            android:layout_centerInParent="false"
             android:text="Gallery" />
 
         <Button
             android:id="@+id/contactButton"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerInParent="false"
             android:layout_toRightOf="@+id/galleryButton"
-            android:layout_weight=".33"
             android:text="Contact" />
+
+        <Button
+            android:id="@+id/createAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_toRightOf="@+id/servicesButton"
+            android:text="Appointments" />
 
     </RelativeLayout>
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="225dp"
-            android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
             app:srcCompat="@drawable/ss_gallery1" />
 

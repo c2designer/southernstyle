@@ -38,6 +38,14 @@ public class MainActivity extends Activity {
                 viewContact();
             }
         });
+
+        Button d = findViewById(R.id.createAppointment);
+        d.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                createAppointment();
+            }
+        });
     }
 
     private void viewServices() {
@@ -55,6 +63,12 @@ public class MainActivity extends Activity {
     private void viewContact() {
         Intent intent = new Intent(getApplicationContext(),
                 ContactActivity.class);
+        startActivity(intent);
+    }
+
+    private void createAppointment() {
+        Intent intent = new Intent(getApplicationContext(),
+                CreateAppointment.class);
         startActivity(intent);
     }
 }
