@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="223dp"
         android:layout_weight="1"
-        android:src="@drawable/ss_gallery1" />
+        android:src="@drawable/kenra" />
 
     <TextView
         android:id="@+id/footerTV"
